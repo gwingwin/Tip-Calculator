@@ -24,7 +24,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1@" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="egl-MA-Q3b">
-                                        <rect key="frame" x="66" y="15" width="73" height="41"/>
+                                        <rect key="frame" x="60" y="15" width="73" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="26"/>
                                         <color key="textColor" red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
@@ -54,17 +54,6 @@
                                 <color key="textColor" red="0.80320785984848486" green="0.80320785984848486" blue="0.80320785984848486" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="center" contentHorizontalAlignment="right" contentVerticalAlignment="center" placeholder="$" textAlignment="right" minimumFontSize="50" id="uAg-kf-FdA">
-                                <rect key="frame" x="22" y="89" width="276" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="50"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                                <connections>
-                                    <action selector="onEditingBegin:" destination="vXZ-lx-hvc" eventType="editingDidBegin" id="csP-5o-NzK"/>
-                                    <action selector="onEditingChanged:" destination="vXZ-lx-hvc" eventType="editingChanged" id="wqV-oR-uQQ"/>
-                                </connections>
-                            </textField>
                             <view contentMode="scaleToFill" id="9Ph-s4-d4b">
                                 <rect key="frame" x="17" y="60" width="287" height="1"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -91,6 +80,19 @@
                                 <color key="textColor" red="0.74433791035353525" green="0.74433791035353525" blue="0.74433791035353525" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="center" contentHorizontalAlignment="right" contentVerticalAlignment="center" placeholder="$" textAlignment="right" minimumFontSize="50" id="uAg-kf-FdA">
+                                <rect key="frame" x="27" y="144" width="276" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="50"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="onEditingBegin:" destination="vXZ-lx-hvc" eventType="editingDidBegin" id="csP-5o-NzK"/>
+                                    <action selector="onEditingChanged:" destination="vXZ-lx-hvc" eventType="editingChanged" id="wqV-oR-uQQ"/>
+                                    <action selector="onEditingEnd:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="GT9-VK-iSC"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -99,6 +101,7 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="animatedView" destination="QS8-J7-gVe" id="zbp-VV-UHa"/>
                         <outlet property="billField" destination="uAg-kf-FdA" id="pGE-Vv-Efj"/>
                         <outlet property="headCountLabel" destination="egl-MA-Q3b" id="pOM-Cq-lRb"/>
                         <outlet property="headCountSlider" destination="Zrv-AR-ryb" id="x9R-8G-QZ2"/>
