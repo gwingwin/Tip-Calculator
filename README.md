@@ -15,6 +15,6 @@ Ran into this SIGABRT crash error and it took me some time to figure out how to 
 
 Walkthrough of user stories:
 
-![Video Walkthrough](TipCal.gif)
+![Video Walkthrough](TipEasy.gif)
 
 
