@@ -21,7 +21,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         totalLabel.text = "$0.00"
-        tipLabel.text = "$0.00"
+        tipLabel.text = "Tip $0.00"
+        billField.text = "$"
+        
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,10 +37,10 @@ class ViewController: UIViewController {
 
 
     @IBAction func onEditingBegin(sender: UITextField) {
-        billField.text = "$"
+        billField.text = "$\(dropFirst(billField.text))"
         totalLabel.text = "$0.00"
-        tipLabel.text = "$0.00"
-        headCountLabel.text = "1"
+        tipLabel.text = "Tip $0.00"
+        headCountLabel.text = "1@"
         headCountSlider.value = 1
         headCountSlider.hidden = true
         
@@ -48,16 +51,16 @@ class ViewController: UIViewController {
     
     @IBAction func onEditingChanged(sender: AnyObject) {
         
-        var tipPercentages = [0.18, 0.2, 0.22]
+        var tipPercentages = [0.15, 0.18, 0.20]
         var selectedTip = tipPercentages[tipControl.selectedSegmentIndex]
      
         var billAmount = NSString(string: dropFirst(billField.text)).doubleValue
         var tip = billAmount * selectedTip
-        
         var headCount = Int(headCountSlider.value)
         var total = (billAmount + tip)/Double(headCount)
-       
-        headCountLabel.text = "\(headCount)"
+        
+        
+        headCountLabel.text = "\(headCount)@"
         tipLabel.text = String(format: "Tip $%.2f", tip )
         totalLabel.text = String(format: "$%.2f", total)
     }

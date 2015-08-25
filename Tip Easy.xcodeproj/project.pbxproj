@@ -26,14 +26,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		96B172DD1B8AB49000605CAF /* tips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tips.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96B172DD1B8AB49000605CAF /* Tip Easy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tip Easy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B172E11B8AB49000605CAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96B172E21B8AB49000605CAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96B172E41B8AB49000605CAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		96B172E71B8AB49000605CAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96B172E91B8AB49000605CAF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		96B172EC1B8AB49000605CAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		96B172F21B8AB49000605CAF /* tipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96B172F21B8AB49000605CAF /* Tip EasyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tip EasyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B172F71B8AB49000605CAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96B172F81B8AB49000605CAF /* tipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,8 +68,8 @@
 		96B172DE1B8AB49000605CAF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				96B172DD1B8AB49000605CAF /* tips.app */,
-				96B172F21B8AB49000605CAF /* tipsTests.xctest */,
+				96B172DD1B8AB49000605CAF /* Tip Easy.app */,
+				96B172F21B8AB49000605CAF /* Tip EasyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,9 +115,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		96B172DC1B8AB49000605CAF /* tips */ = {
+		96B172DC1B8AB49000605CAF /* Tip Easy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 96B172FC1B8AB49000605CAF /* Build configuration list for PBXNativeTarget "tips" */;
+			buildConfigurationList = 96B172FC1B8AB49000605CAF /* Build configuration list for PBXNativeTarget "Tip Easy" */;
 			buildPhases = (
 				96B172D91B8AB49000605CAF /* Sources */,
 				96B172DA1B8AB49000605CAF /* Frameworks */,
@@ -127,14 +127,14 @@
 			);
 			dependencies = (
 			);
-			name = tips;
+			name = "Tip Easy";
 			productName = tips;
-			productReference = 96B172DD1B8AB49000605CAF /* tips.app */;
+			productReference = 96B172DD1B8AB49000605CAF /* Tip Easy.app */;
 			productType = "com.apple.product-type.application";
 		};
-		96B172F11B8AB49000605CAF /* tipsTests */ = {
+		96B172F11B8AB49000605CAF /* Tip EasyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 96B172FF1B8AB49000605CAF /* Build configuration list for PBXNativeTarget "tipsTests" */;
+			buildConfigurationList = 96B172FF1B8AB49000605CAF /* Build configuration list for PBXNativeTarget "Tip EasyTests" */;
 			buildPhases = (
 				96B172EE1B8AB49000605CAF /* Sources */,
 				96B172EF1B8AB49000605CAF /* Frameworks */,
@@ -145,9 +145,9 @@
 			dependencies = (
 				96B172F41B8AB49000605CAF /* PBXTargetDependency */,
 			);
-			name = tipsTests;
+			name = "Tip EasyTests";
 			productName = tipsTests;
-			productReference = 96B172F21B8AB49000605CAF /* tipsTests.xctest */;
+			productReference = 96B172F21B8AB49000605CAF /* Tip EasyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -168,7 +168,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 96B172D81B8AB49000605CAF /* Build configuration list for PBXProject "tips" */;
+			buildConfigurationList = 96B172D81B8AB49000605CAF /* Build configuration list for PBXProject "Tip Easy" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -181,8 +181,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				96B172DC1B8AB49000605CAF /* tips */,
-				96B172F11B8AB49000605CAF /* tipsTests */,
+				96B172DC1B8AB49000605CAF /* Tip Easy */,
+				96B172F11B8AB49000605CAF /* Tip EasyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -230,7 +230,7 @@
 /* Begin PBXTargetDependency section */
 		96B172F41B8AB49000605CAF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 96B172DC1B8AB49000605CAF /* tips */;
+			target = 96B172DC1B8AB49000605CAF /* Tip Easy */;
 			targetProxy = 96B172F31B8AB49000605CAF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -340,10 +340,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = tips/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				INFOPLIST_FILE = "$(SRCROOT)/tips/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Tip Easy";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -351,10 +352,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = tips/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				INFOPLIST_FILE = "$(SRCROOT)/tips/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Tip Easy";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -372,7 +374,7 @@
 				);
 				INFOPLIST_FILE = tipsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Tip EasyTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tips.app/tips";
 			};
 			name = Debug;
@@ -387,7 +389,7 @@
 				);
 				INFOPLIST_FILE = tipsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Tip EasyTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tips.app/tips";
 			};
 			name = Release;
@@ -395,7 +397,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		96B172D81B8AB49000605CAF /* Build configuration list for PBXProject "tips" */ = {
+		96B172D81B8AB49000605CAF /* Build configuration list for PBXProject "Tip Easy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				96B172FA1B8AB49000605CAF /* Debug */,
@@ -404,21 +406,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		96B172FC1B8AB49000605CAF /* Build configuration list for PBXNativeTarget "tips" */ = {
+		96B172FC1B8AB49000605CAF /* Build configuration list for PBXNativeTarget "Tip Easy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				96B172FD1B8AB49000605CAF /* Debug */,
 				96B172FE1B8AB49000605CAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		96B172FF1B8AB49000605CAF /* Build configuration list for PBXNativeTarget "tipsTests" */ = {
+		96B172FF1B8AB49000605CAF /* Build configuration list for PBXNativeTarget "Tip EasyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				96B173001B8AB49000605CAF /* Debug */,
 				96B173011B8AB49000605CAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
