@@ -3,7 +3,7 @@ PreWork4CodePath
 
 This is the pre-work assignment for CodePath design class
 
-Time spent: 8 hours
+Time spent: 9 hours
 
 Completed user stories:
 * [x] Required: User can enter a bill amount and receive the tip amount and the total amount of payment
