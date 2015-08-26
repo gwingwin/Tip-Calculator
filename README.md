@@ -15,7 +15,6 @@ Notes:
 Ran into this SIGABRT crash error and it took me some time to figure out how to fix it.
 
 Walkthrough of user stories:
-
 ![Video Walkthrough](TipEasy.gif)
 
 
