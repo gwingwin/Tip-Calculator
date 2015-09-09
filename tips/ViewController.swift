@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var animatedView: UIView!
     
+    @IBOutlet weak var requestButton: UIButton!
+
 
     
     override func viewDidLoad() {
@@ -53,9 +55,10 @@ class ViewController: UIViewController {
         headCountLabel.text = "1@"
         headCountSlider.value = 1
         headCountSlider.hidden = true
+        requestButton.hidden = true
         
         if count(billField.text) <= 1 {
-            self.billField.frame.origin.y = 94
+            self.billField.frame.origin.y = 90
         }
 
 
@@ -64,7 +67,7 @@ class ViewController: UIViewController {
 
     @IBAction func onEditingEnd(sender: AnyObject) {
         if count(billField.text) <= 1 {
-            self.billField.frame.origin.y = 144
+            self.billField.frame.origin.y = 200
         }
     }
     
@@ -81,7 +84,7 @@ class ViewController: UIViewController {
         })
         
         if count(billField.text) == 1 {
-            self.billField.frame.origin.y += 50
+            self.billField.frame.origin.y += 110
             self.animatedView.alpha = 0
             self.tipControl.alpha = 0
             self.tipLabel.alpha = 0
@@ -94,13 +97,23 @@ class ViewController: UIViewController {
             var headCount = Int(headCountSlider.value)
             var total = (billAmount + tip)/Double(headCount)
             
+            if headCount > 1{
+                requestButton.hidden = false
+            } else {
+                requestButton.hidden = true
+            }
+            
             headCountLabel.text = "\(headCount)@"
             tipLabel.text = String(format: "Tip $%.2f", tip )
             totalLabel.text = String(format: "$%.2f", total)
+            
+           
+            
         }
     }
     
-
+    @IBAction func unwindToMainViewController(segue: UIStoryboardSegue) {
+    }
 
     @IBAction func onTap(sender: AnyObject) {
         view.endEditing(true)
